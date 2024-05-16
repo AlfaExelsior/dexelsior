@@ -10,7 +10,6 @@ function Balance() {
   const [isHidden, setHidden] = useState(true);
   
   async function handleClick() {
-    // console.log(inputValue);
     const principal = Principal.fromText(inputValue);
     const balance = await token.balanceOf(principal);
     setBalance(balance.toLocaleString());
