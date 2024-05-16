@@ -7,7 +7,7 @@ actor Token {
 
   let owner : Principal = Principal.fromText("<REPLACE WITH YOUR OWN COMMAND LINE PRINCIPAL>");
   let totalSupply : Nat = 1000000000000000;
-  let symbol : Text = "DANG";
+  let symbol : Text = "DEXELSIOR";
 
   private stable var balanceEntries : [(Principal, Nat)] = [];
   private var balances = HashMap.HashMap<Principal, Nat>(1, Principal.equal, Principal.hash);
