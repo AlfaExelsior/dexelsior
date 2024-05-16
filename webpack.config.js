@@ -95,7 +95,6 @@ module.exports = {
       process: require.resolve("process/browser"),
     }),
   ],
-  // proxy /api to port 8000 during development
   devServer: {
     proxy: {
       "/api": {
